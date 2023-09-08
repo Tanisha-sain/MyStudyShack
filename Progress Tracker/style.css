@@ -1,0 +1,426 @@
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5e3ff;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 5px;
+    margin: 2px 2px;
+}
+
+#logo-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    /* padding: 6px 372px 6px 0; */
+    width: 70%;
+    margin: 7px 100px 7px 0px;
+    font-family: 'Roboto Slab';
+    letter-spacing: 1px;
+    color: rgb(0, 0, 68);
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.logo {
+    margin-top: 6px;
+    margin-right: 15px;
+}
+
+.title {
+    font-family: 'Roboto Slab', serif;
+    margin: 6px 0px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.back-btn {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 6px 10px;
+    background-color: floralwhite;
+    color: #1e0000;
+    cursor: pointer;
+}
+
+.back-btn span {
+    font-size: 1.5rem;
+
+}
+
+.back-btn:hover {
+    background-color: rgb(255, 161, 161);
+    color: rgb(0, 0, 0);
+}
+
+.field {
+    /* width: auto; */
+    font-size: 1.9rem;
+    margin: 21px 20px;
+    /* padding: 54px; */
+    text-align: center;
+    /* margin-right: 545px; */
+    font-family: cursive;
+    margin-left: 230px;
+}
+
+#headingPDFS {
+    text-align: center;
+    margin-right: 570px;
+    margin-top: 32px;
+    font-size: 3.6rem;
+    color: #4f007d;
+}
+
+
+
+.container-pdf,
+.container-vid {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    padding: 30px;
+    border: 2px solid white;
+    background-color: white;
+    margin-left: 278px;
+    margin-right: 30px;
+    margin-top: 42px;
+    margin-bottom: 20px;
+    border-radius: 21px;
+}
+
+.container-pdf .heading,
+.container-vid .heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(223, 223, 255);
+}
+
+.container-pdf .box-container,
+.container-vid .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+}
+
+.container-pdf .box-container .box,
+.container-vid .box-container .box {
+    background-color: #cdf4f55f;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    display: none;
+}
+
+.container-pdf .box-container .box:nth-child(1),
+.container-pdf .box-container .box:nth-child(2),
+.container-vid .box-container .box:nth-child(1),
+.container-vid .box-container .box:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-pdf .box-container .box .image,
+.container-vid .box-container .box .image {
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.container-pdf .box-container .box .image img,
+.container-vid .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container-pdf .box-container .box:hover .image img,
+.container-vid .box-container .box:hover .image img {
+    transform: scale(1.1);
+    transition: all .2s linear;
+}
+
+
+.container-pdf .box-container .box .content h3,
+.container-vid .box-container .box .content h3 {
+    font-size: 20px;
+    color: #334;
+}
+
+.container-pdf .box-container .box .content p,
+.container-vid .box-container .box .content p {
+    font-size: 15px;
+    color: #777;
+    line-height: 2;
+    padding: 15px 0;
+}
+
+.container-pdf .box-container .box .content .btn,
+.container-vid .box-container .box .content .btn {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #334;
+    color: #334;
+    font-size: 16px;
+}
+
+.container-pdf .box-container .box .content .btn:hover,
+.container-vid .box-container .box .content .btn:hover {
+    background-color: crimson;
+    border-color: crimson;
+    color: #fff;
+    transition: all .2s linear;
+}
+
+.container-pdf .box-container .box .content .icons,
+.container-vid .box-container .box .content .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #334;
+}
+
+.container-pdf .box-container .box .content .icons span,
+.container-vid .box-container .box .content .icons span {
+    font-size: 14px;
+    color: #777;
+}
+
+.container-pdf .box-container .box .content .icons span i,
+.container-vid .box-container .box .content .icons span i {
+    color: crimson;
+    padding-right: 5px;
+}
+
+#load-more {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 13px 30px;
+    border: 1px solid #334;
+    color: #334;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#load-more:hover {
+    background-color: crimson;
+    border-color: crimson;
+    color: #fff;
+    transition: all .2s linear;
+}
+
+#headingVIDEO {
+    text-align: center;
+    margin-left: -545px;
+    margin-top: 60px;
+    font-size: 3.6rem;
+    color: #4f007d;
+}
+
+.container-pdf .box-container .video video .container-vid .box-container .video video {
+    width: 100%;
+    height: 100%;
+}
+
+#load-more-videos {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 13px 30px;
+    border: 1px solid #334;
+    color: #334;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#load-more-videos:hover {
+    background-color: crimson;
+    border-color: crimson;
+    color: #fff;
+    transition: all .2s linear;
+}
+
+
+/* Progress Bar Section */
+
+.progress-heading {
+    text-align: center;
+    font-family: serif;
+    padding: 8px 4px;
+    font-size: 3rem;
+    color: #620000d4;
+    margin-left: 240px;
+}
+
+.container-progress,
+.container-progress2,
+.container-progress3 {
+    display: flex;
+    width: 420px;
+    padding: 50px 0;
+    border-radius: 18px;
+    background: #fff;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circular-progress,
+.circular-progress2,
+.circular-progress3 {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background: conic-gradient(#7d2ae8 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before,
+.circular-progress2::before,
+.circular-progress3::before {
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.progress-value,
+.progress-value2,
+.progress-value3 {
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #7d2ae8;
+}
+
+.text-progress,
+.text-progress2,
+.text-progress3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #606060;
+}
+
+.progress-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background: #fff;
+    /* margin: 20px 85px; */
+    margin-left: 274px;
+    margin-right: 32px;
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-left: 190px;
+}
+
+#text1 {
+    text-align: center;
+    vertical-align: center;
+}
+
+#text1-form,
+#text2-form {
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab';
+    color: rgb(0, 0, 70);
+    padding: 11px 29px;
+    margin-right: -23px;
+    margin-left: 0px;
+}
+
+#pdfs-form,
+#videos-form {
+    font-size: 20px;
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+
+#submit-btn {
+    background-color: rgb(66, 0, 152);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+    padding: 9px 23px;
+    margin: 19px 0px;
+}
+
+#submit-btn:hover,
+#submit-btn:active {
+    background-color: #6f00ff;
+}
+
+.eod-file {
+    border: 2px solid white;
+    border-radius: 16px;
+    padding: 34px 54px;
+    margin: 55px;
+    margin-left: 274px;
+    margin-right: 38px;
+    background-color: white;
+}
+
+.eod-para {
+    font-size: 1.5rem;
+    font-family: cursive;
+    padding: 11px;
+}
+
+
+.container-vid .box-container .video video {
+    width: 100%;
+    height: 100%;
+}
+
+#covered {
+    text-decoration: none;
+    color: black;
+}
