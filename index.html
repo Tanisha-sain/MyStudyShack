@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Study Shack</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+        <link href="img/favicon.ico" rel="icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+            rel="stylesheet">
+    
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <link href="css/style.css" rel="stylesheet">
+    
+        <link rel="stylesheet" href="css/signUp.css">
+
+
+</head>
+<body>
+
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <img src="Images/myStudyShack.png" alt="Logo" width="65px" style="margin-right: 20px;">
+
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0">My Study Shack</h1>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="#" class="nav-item nav-link">About</a>
+                        <a href="#" class="nav-item nav-link">Services</a>
+                        <a href="#" class="nav-item nav-link invisible" id="study-material">Study Material</a>
+                        <a href="#" class="nav-item nav-link invisible" id="your-progress">Your Progress</a>
+                        
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="#" class="dropdown-item">Feedback</a>
+                                <a href="#" class="dropdown-item">Donate</a>
+                            </div>
+                        </div>
+
+
+                        <a href="#" class="nav-item nav-link">Ask Us Anything</a>
+                    </div>
+                    <button class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block" id="signup-button"  onclick=" 
+                    ">Get Started</button>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5 align-items-end">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">A Free For All Platform For Quality
+                                Education</h1>
+                            <p class="text-white pb-3 animated slideInDown">Welcome to My Study Shack, where the doors
+                                to quality education are always open! Discover a world of knowledge with us. At My Study
+                                Shack, our mission is to make quality education accessible to all, without barriers.
+                                Here in we have also included a chatBot that can solve multiple of your problems given
+                                the correct prompts you enter!</p>
+                            <button
+                                class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft" id="signup-button2">Get
+                                Started</button>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+
+        <!-- signUp start -->
+        <div class="container-signUp">
+            <button id="exit">&times;</button>
+        
+            <h2>
+                Sign up form
+            </h2>
+            <form action="" id="form">
+                <div class="input-name">
+                    <i class="fa fa-user lock"></i>
+                    <input type="text" placeholder="First Name" class="name" id="fname" required>
+                    <span>
+                        <i class="fa fa-user lock"></i>
+                        <input type="text" placeholder="Last Name" class="name" id="lname" required>
+                    </span>
+                </div>
+
+                <div class="cm">
+                    <i class="fa fa-envelope email lock"></i>
+                    <input type="email" placeholder="Email" class="text-name" id="email" required>
+                </div>
+                <div class="cm">
+                    <i class="fa fa-lock lock"></i>
+                    <input type="password" placeholder="Password" class="text-name" id="pass" required>
+                </div>
+                
+                <div id="err"></div>
+                <div class="cm">
+                    <i class="fa fa-graduation-cap lock college"></i>
+                    <input type="text" placeholder="College" class="text-name" id="college" required>
+                </div>
+                <div class="br">
+                    
+                    <select id="branch" required>
+                        <option value="" disabled selected hidden>Branch</option>
+                        <option value="cse">CSE</option>
+                        <option value="cs">CS</option>
+                        <option value="cse-aiml">CSE-AIML</option>
+                        <option value="cse-ds">CSE-DS</option>
+                      </select>
+                      <div class="arrow1"></div>
+                
+                    
+                    <select id="sem" required>
+                        <option value="" disabled selected hidden>Semester</option>
+                        <option> 1st </option>
+                        <option> 2nd </option>
+                        <option> 3rd </option>
+                        <option> 4th </option>
+                        <option> 5th </option>
+                        <option> 6th </option>
+                        <option> 7th </option>
+                        <option> 8th </option>
+                      </select>
+                      <div class="arrow2"></div>
+                </div>
+                <div class="terms">
+                    
+                        <input type="checkbox" id="check" required>
+                        <label for="check" class="ch">I accept the Terms & Conditions.</label>
+                </div>
+                <div class="sub">
+                    <input type="submit" class="button" value="Sign in">
+                </div>
+                
+            </form>
+
+        </div>
+
+        <div id="popupMessage" class="popup">
+            <div class="popup-content">
+                <h1>Thanks for Signing in!</h1>
+                <h3>Now you can access all the free material (PDFs & Videos) available on our website.</h3>
+
+            </div>
+        </div>
+
+        <!-- signUp end -->
+
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Address</p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Ghaziabad, Uttar Pradesh</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>9999999900</p>
+                        <p><i class="fa fa-envelope me-3"></i>studyshacks823@gmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">Quick Links</p>
+                        <a class="btn btn-link" href="#">About Us</a>
+                        <a class="btn btn-link" href="#">Ask Us Anything</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">My Study Shack</a>, All Right Reserved.
+                            Designed By <a class="border-bottom" href="https://htmlcodex.com">BIT Manipulators</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/signUp.js"></script>
+    
+</body>
+</html>
