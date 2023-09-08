@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>My Study Shack</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
-        <link href="img/favicon.ico" rel="icon">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
-            rel="stylesheet">
-    
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-        <link href="css/style.css" rel="stylesheet">
-    
-        <link rel="stylesheet" href="css/signUp.css">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
+    <!-- Bootstrap Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ChatBot Stylesheet -->
+    <link rel="stylesheet" href="ChatBot/chatBot.css">
+
+    <!-- Sign Up Stylesheet -->
+    <link rel="stylesheet" href="css/signUp.css">
 </head>
+
 <body>
 
     <div class="container-xxl bg-white p-0">
@@ -47,7 +58,7 @@
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <img src="Images/myStudyShack.png" alt="Logo" width="65px" style="margin-right: 20px;">
 
-                <a href="" class="navbar-brand p-0">
+                <a href="index.html" class="navbar-brand p-0">
                     <h1 class="m-0">My Study Shack</h1>
                 </a>
 
@@ -57,24 +68,25 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="#" class="nav-item nav-link">About</a>
-                        <a href="#" class="nav-item nav-link">Services</a>
-                        <a href="#" class="nav-item nav-link invisible" id="study-material">Study Material</a>
-                        <a href="#" class="nav-item nav-link invisible" id="your-progress">Your Progress</a>
-                        
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
-                                <a href="#" class="dropdown-item">Feedback</a>
-                                <a href="#" class="dropdown-item">Donate</a>
+                                <a href="Feedback/index.html" class="dropdown-item">Feedback</a>
+                                <a href="Donate/donate.html" class="dropdown-item">Donate</a>
                             </div>
                         </div>
 
 
-                        <a href="#" class="nav-item nav-link">Ask Us Anything</a>
+                        <a href="askUsAnything.html" class="nav-item nav-link">Ask Us Anything</a>
                     </div>
-                    <button class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block" id="signup-button"  onclick=" 
-                    ">Get Started</button>
+                    <button class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block" id="signup-button" onclick=" 
+                    ">
+                        <a href="Progress Tracker/index.html">
+                            Get Started</a>
+                    </button>
                 </div>
             </nav>
 
@@ -89,9 +101,15 @@
                                 Shack, our mission is to make quality education accessible to all, without barriers.
                                 Here in we have also included a chatBot that can solve multiple of your problems given
                                 the correct prompts you enter!</p>
-                            <button
-                                class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft" id="signup-button2">Get
-                                Started</button>
+                                <p class="text-white pb-3 animated slideInDown">
+                                    Click on Get Started to access progress tracker!
+                                </p>
+                            <button class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft"
+                                id="signup-button2">
+                                <a href="Progress Tracker/index.html">
+                                    Get
+                                    Started</a>
+                            </button>
                         </div>
                         <div class="col-lg-6 text-center text-lg-start">
                             <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
@@ -107,7 +125,7 @@
         <!-- signUp start -->
         <div class="container-signUp">
             <button id="exit">&times;</button>
-        
+
             <h2>
                 Sign up form
             </h2>
@@ -129,24 +147,24 @@
                     <i class="fa fa-lock lock"></i>
                     <input type="password" placeholder="Password" class="text-name" id="pass" required>
                 </div>
-                
+
                 <div id="err"></div>
                 <div class="cm">
                     <i class="fa fa-graduation-cap lock college"></i>
                     <input type="text" placeholder="College" class="text-name" id="college" required>
                 </div>
                 <div class="br">
-                    
+
                     <select id="branch" required>
                         <option value="" disabled selected hidden>Branch</option>
                         <option value="cse">CSE</option>
                         <option value="cs">CS</option>
                         <option value="cse-aiml">CSE-AIML</option>
                         <option value="cse-ds">CSE-DS</option>
-                      </select>
-                      <div class="arrow1"></div>
-                
-                    
+                    </select>
+                    <div class="arrow1"></div>
+
+
                     <select id="sem" required>
                         <option value="" disabled selected hidden>Semester</option>
                         <option> 1st </option>
@@ -157,18 +175,18 @@
                         <option> 6th </option>
                         <option> 7th </option>
                         <option> 8th </option>
-                      </select>
-                      <div class="arrow2"></div>
+                    </select>
+                    <div class="arrow2"></div>
                 </div>
                 <div class="terms">
-                    
-                        <input type="checkbox" id="check" required>
-                        <label for="check" class="ch">I accept the Terms & Conditions.</label>
+
+                    <input type="checkbox" id="check" required>
+                    <label for="check" class="ch">I accept the Terms & Conditions.</label>
                 </div>
                 <div class="sub">
                     <input type="submit" class="button" value="Sign in">
                 </div>
-                
+
             </form>
 
         </div>
@@ -182,6 +200,50 @@
         </div>
 
         <!-- signUp end -->
+
+        <!-- Feature Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <!-- <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i> -->
+                            <i class="fas fa-robot fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Artificial Intelligence</h5>
+                            <p class="m-0">The upcoming future, we focus on the practical aspects more rather than
+                                involving
+                                only theoretical prompts. Not only this, we conduct time to time workshops to keep the
+                                interests
+                                in AI steady among our students.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <!-- <i class="fa fa-3x fa-search text-primary mb-4"></i> -->
+                            <i class="fa fa-book fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">Core Subjects</h5>
+                            <p class="m-0">For those students not involved into technical fields have their own space
+                                and
+                                information regarding subjects of Electrical Networking, Electical Communication &
+                                Networking,
+                                Electrical Communications etc.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
+                            <h5 class="mb-3">Web Development</h5>
+                            <p class="m-0">It is one of the major fields on which we focus, thus imparting creativity
+                                and
+                                illustrative skills to students to be able to utilize full potential of their minds in
+                                whichever
+                                field they go, be it Front End or Back End Dev.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
 
 
 
