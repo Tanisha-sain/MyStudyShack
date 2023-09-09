@@ -44,12 +44,20 @@ const generateResponse = (incomingChatLi) => {
 }
 
 
+chatInput.addEventListener("keypress",(event) => {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        sendChatBtn.click();
+      }
+} )
+
+
 const handleChat = () => {
     userMessage = chatInput.value.trim();
     if (!userMessage) {
         return;
     }
-    // createChatLi(userMessage, "chat-outgoing");
+
     chatbox.appendChild(createChatLi(userMessage, "chat-outgoing"));
     chatbox.scrollTo(0, chatbox.scrollHeight);
 
@@ -60,14 +68,22 @@ const handleChat = () => {
         generateResponse(incomingChatLi);
     }, 600);
 
+    chatInput.value = "";
+
 }
 
 sendChatBtn.addEventListener("click", handleChat);
 
+
+
+
+
+const chatbotcomplete = document.querySelector('.chatBot');
+const popUpMsg = document.querySelector('.pop-Up');
+
+
 function toggleHide() {
-    let image = document.getElementById('chatbot-image');
-    let chatbotcomplete = document.querySelector('.chatBot');
-    let popUpMsg = document.querySelector('.pop-Up');
+    // let image = document.getElementById('chatbot-image');
     if (chatbotcomplete.style.display == 'none') {
         chatbotcomplete.style.display = 'block';
         popUpMsg.style.display = 'none';
@@ -78,6 +94,8 @@ function toggleHide() {
     }
 
 }
+
+chatBotImage.addEventListener("click",toggleHide)
 
 function cancel(){
     let crossNow = document.getElementById('cross');
