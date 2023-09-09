@@ -1,7 +1,8 @@
+
 let loadMoreBtn = document.querySelector('#load-more');
 let currentItem = 2;
 
-loadMoreBtn.addEventListener("click", () => {
+loadMoreBtn.addEventListener("click", ()=>{
     let boxes = [...document.querySelectorAll('.container-pdf .box-container .box')];
     for (var i = currentItem; i < currentItem + 2; i++) {
         boxes[i].style.display = 'inline-block';
@@ -31,8 +32,8 @@ loadMoreVideos.addEventListener("click", () => {
 })
 
 let progressStartValue = -1,
-    progressEndValue = 0,
-    speed = 90;
+progressEndValue = 0,
+speed = 90;
 
 
 let progressStartValue2 = -1,
@@ -40,31 +41,29 @@ let progressStartValue2 = -1,
     speed2 = 80;
 
 
-// let progressEndValue,progressEndValue2;
+
 
 const submit = document.getElementById("submit-button");
 const pdfInput = document.getElementById("pdfs-form");
 const vidInput = document.getElementById("videos-form");
 
 
-form.addEventListener("submit", async function (event) {
+form.addEventListener("submit" , async function(event){
     event.preventDefault();
+   
 
-    // let progressEndValue = 0,progressEndValue2 = 0;
-    // progressEndValue = 0;
-    // progressEndValue2 = 0;
-    // someFunction();
+
     const pdfValue = pdfInput.value;
     const vidValue = vidInput.value;
-    if (pdfValue > 8 || vidValue > 6) {
+    if(pdfValue > 8 || vidValue > 6){
         alert("Enter the pdfs in range 0-8 and videos in range 0-6");
     }
-    if (progressEndValue === 0 && progressEndValue2 === 0 && pdfValue <= 8 && vidValue <= 6) {
-        progressEndValue = parseInt((pdfValue / 8) * 100);
+    if (progressEndValue === 0 && progressEndValue2 === 0 && pdfValue <= 8 && vidValue <=6){
+        progressEndValue = parseInt((pdfValue / 8) * 100 );
         progressEndValue2 = parseInt((vidValue / 6) * 100);
         someFunction();
     }
-});
+} );
 
 function someFunction() {
     // let progressStartValue = -1, progressStartValue2 = -1;
@@ -72,7 +71,7 @@ function someFunction() {
 
 
     let circularProgress = document.querySelector(".circular-progress"),
-        progressValue = document.querySelector(".progress-value");
+    progressValue = document.querySelector(".progress-value");
 
     let progress = setInterval(() => {
         progressStartValue++;
@@ -86,14 +85,14 @@ function someFunction() {
     }, speed);
 
     let circularProgress2 = document.querySelector(".circular-progress2"),
-        progressValue2 = document.querySelector(".progress-value2");
+    progressValue2 = document.querySelector(".progress-value2");
 
     let progress2 = setInterval(() => {
         progressStartValue2++;
-
+    
         progressValue2.textContent = `${progressStartValue2}%`
         circularProgress2.style.background = `conic-gradient(#7d2ae8 ${progressStartValue2 * 3.6}deg, #ededed 0deg)`
-
+    
         if (progressStartValue2 == progressEndValue2) {
             clearInterval(progress2);
         }
@@ -101,4 +100,6 @@ function someFunction() {
 
 
 }
+
+
 
