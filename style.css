@@ -6,7 +6,7 @@
 }
 
 
-/*** Spinner */
+/*** Spinner ***/
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -29,7 +29,7 @@
 }
 
 
-/*** Heading */
+/*** Heading ***/
 h1,
 h2,
 .fw-bold {
@@ -49,7 +49,7 @@ h6,
 }
 
 
-/*** Button */
+/*** Button ***/
 .btn {
     font-weight: 500;
     transition: .5s;
@@ -86,7 +86,7 @@ h6,
 }
 
 
-/*** Navbar */
+/*** Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f067";
@@ -207,7 +207,7 @@ h6,
 }
 
 
-/*** Hero Header */
+/*** Hero Header ***/
 .hero-header {
     margin-bottom: 6rem;
     padding: 18rem 0;
@@ -235,7 +235,7 @@ h6,
 }
 
 
-/*** Section Title */
+/*** Section Title ***/
 .section-title {
     position: relative;
     display: flex;
@@ -295,7 +295,7 @@ h6,
 }
 
 
-/*** Feature */
+/*** Feature ***/
 .feature-item {
     transition: .5s;
 }
@@ -305,7 +305,7 @@ h6,
 }
 
 
-/*** About */
+/*** About ***/
 .progress {
     height: 5px;
 }
@@ -316,7 +316,7 @@ h6,
 }
 
 
-/*** Fact */
+/*** Fact ***/
 .fact {
     margin: 6rem 0;
     background:
@@ -335,7 +335,7 @@ h6,
 }
 
 
-/*** Service */
+/*** Service ***/
 .service-item {
     position: relative;
     padding: 45px 30px;
@@ -401,9 +401,69 @@ h6,
 }
 
 
+/*** Project Portfolio ***/
+#portfolio-flters li {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--dark);
+    cursor: pointer;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
+}
+
+#portfolio-flters li:hover,
+#portfolio-flters li.active {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.portfolio-item img {
+    transition: .5s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-item .portfolio-overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(98, 34, 204, .9);
+    transition: .5s;
+    opacity: 0;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
 
 
-/*** Testimonial */
+/*** Newsletter ***/
+.newsletter {
+    margin: 6rem 0;
+    background:
+        url(../img/blob-top-left.png),
+        url(../img/blob-top-right.png),
+        url(../img/blob-bottom-left.png),
+        url(../img/blob-bottom-right.png),
+        url(../img/blob-center.png);
+    background-position:
+        left 0px top 0px,
+        right 0px top 0px,
+        left 0px bottom 0px,
+        right 0px bottom 0px,
+        center center;
+    background-repeat: no-repeat;
+}
+
+
+/*** Testimonial ***/
 .testimonial-carousel .testimonial-item {
     padding: 0 30px 30px 30px;
 }
@@ -436,7 +496,7 @@ h6,
 }
 
 
-/*** Team */
+/*** Team ***/
 .team-item .btn {
     color: var(--primary);
     background: #FFFFFF;
@@ -448,7 +508,7 @@ h6,
 }
 
 
-/*** Footer */
+/*** Footer ***/
 .footer {
     margin-top: 6rem;
     padding-top: 9rem;
@@ -545,3 +605,4 @@ font-size: 3rem;
     color: black;
     border-radius: 4px solid black;
 }
+
