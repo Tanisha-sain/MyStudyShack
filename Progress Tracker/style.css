@@ -14,13 +14,13 @@
 }
 
 body {
-    background-color: #f5e3ff;
+    background-color: rgba(244, 235, 242, 0.48);
 }
 
 .container1 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 4px 5px;
     margin: 2px 2px;
 }
@@ -37,7 +37,7 @@ body {
     /* padding: 6px 372px 6px 0; */
     width: 70%;
     margin: 7px 100px 7px 0px;
-    font-family: 'Roboto Slab';
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
     color: rgb(0, 0, 68);
 }
@@ -81,23 +81,78 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.side-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: unset; */
+    float: left;
+    padding: 35px 20px;
+    gap: 1.9rem;
+    border: 2px solid white;
+    /* margin-top: 10px; */
+    margin-left: 29px;
+    border-radius: 10px;
+    background-color: rgb(255 255 255);
+    width: 15%;
+    margin-top: 13px;
+    height: 430px;
+}
+
+.side-bar .material-symbols-outlined {
+    width: 43px;
+}
+
+.side-bar a {
+    text-decoration: none;
+    /* font-size: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-bar a p{
+    font-size: 20px;
+}
+
+.side-bar a p:hover {
+    font-size: 23px;
+}
+
+
+.side-bar .material-symbols-outlined {
+
+    font-size: 30px !important;
+}
+
+#text2 {
+    margin-left: 9px;
+}
+
+#img2 {
+    padding: 2px;
+}
+
+#img3 {
+    margin-left: 9px;
+}
+
+
 .field {
     /* width: auto; */
     font-size: 1.9rem;
-    margin: 21px 20px;
+    margin: 20px 20px;
     /* padding: 54px; */
     text-align: center;
-    /* margin-right: 545px; */
-    font-family: cursive;
-    margin-left: 230px;
+    margin-right: 92px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #headingPDFS {
     text-align: center;
-    margin-right: 570px;
+    margin-right: 78px;
     margin-top: 32px;
     font-size: 3.6rem;
-    color: #4f007d;
+    color: #db7070;
 }
 
 
@@ -123,14 +178,14 @@ body {
     color: rgb(223, 223, 255);
 }
 
-.container-pdf .box-container,
+.container-pdf .box-container ,
 .container-vid .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 50px;
 }
 
-.container-pdf .box-container .box,
+.container-pdf .box-container .box ,
 .container-vid .box-container .box {
     background-color: #cdf4f55f;
     padding: 20px;
@@ -149,7 +204,7 @@ body {
     width: 100%;
 }
 
-.container-pdf .box-container .box .image,
+.container-pdf .box-container .box .image ,
 .container-vid .box-container .box .image {
     margin-bottom: 20px;
     overflow: hidden;
@@ -157,27 +212,27 @@ body {
     border-radius: 5px;
 }
 
-.container-pdf .box-container .box .image img,
+.container-pdf .box-container .box .image img ,
 .container-vid .box-container .box .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.container-pdf .box-container .box:hover .image img,
+.container-pdf .box-container .box:hover .image img ,
 .container-vid .box-container .box:hover .image img {
     transform: scale(1.1);
     transition: all .2s linear;
 }
 
 
-.container-pdf .box-container .box .content h3,
+.container-pdf .box-container .box .content h3 ,
 .container-vid .box-container .box .content h3 {
     font-size: 20px;
     color: #334;
 }
 
-.container-pdf .box-container .box .content p,
+.container-pdf .box-container .box .content p ,
 .container-vid .box-container .box .content p {
     font-size: 15px;
     color: #777;
@@ -185,7 +240,7 @@ body {
     padding: 15px 0;
 }
 
-.container-pdf .box-container .box .content .btn,
+.container-pdf .box-container .box .content .btn ,
 .container-vid .box-container .box .content .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -195,14 +250,14 @@ body {
 }
 
 .container-pdf .box-container .box .content .btn:hover,
-.container-vid .box-container .box .content .btn:hover {
+.container-vid .box-container .box .content .btn:hover  {
     background-color: crimson;
     border-color: crimson;
     color: #fff;
     transition: all .2s linear;
 }
 
-.container-pdf .box-container .box .content .icons,
+.container-pdf .box-container .box .content .icons ,
 .container-vid .box-container .box .content .icons {
     display: flex;
     align-items: center;
@@ -212,13 +267,13 @@ body {
     border-top: 1px solid #334;
 }
 
-.container-pdf .box-container .box .content .icons span,
+.container-pdf .box-container .box .content .icons span ,
 .container-vid .box-container .box .content .icons span {
     font-size: 14px;
     color: #777;
 }
 
-.container-pdf .box-container .box .content .icons span i,
+.container-pdf .box-container .box .content .icons span i ,
 .container-vid .box-container .box .content .icons span i {
     color: crimson;
     padding-right: 5px;
@@ -244,13 +299,14 @@ body {
 
 #headingVIDEO {
     text-align: center;
-    margin-left: -545px;
-    margin-top: 60px;
+    margin-left: 196px;
+    margin-top: 32px;
     font-size: 3.6rem;
-    color: #4f007d;
+    color: #db7070;
 }
 
-.container-pdf .box-container .video video .container-vid .box-container .video video {
+.container-pdf .box-container .video video 
+.container-vid .box-container .video video {
     width: 100%;
     height: 100%;
 }
@@ -278,10 +334,10 @@ body {
 
 .progress-heading {
     text-align: center;
-    font-family: serif;
+    font-family: 'Poppins', sans-serif;
     padding: 8px 4px;
     font-size: 3rem;
-    color: #620000d4;
+    color: #49b004d4;
     margin-left: 240px;
 }
 
@@ -358,7 +414,7 @@ body {
     margin-left: 190px;
 }
 
-#text1 {
+#text1{
     text-align: center;
     vertical-align: center;
 }
@@ -366,7 +422,7 @@ body {
 #text1-form,
 #text2-form {
     font-size: 1.5rem;
-    font-family: 'Roboto Slab';
+    font-family: 'Times New Roman', Times, serif;
     color: rgb(0, 0, 70);
     padding: 11px 29px;
     margin-right: -23px;
@@ -374,7 +430,7 @@ body {
 }
 
 #pdfs-form,
-#videos-form {
+#videos-form{
     font-size: 20px;
     padding: 5px;
     width: 150px;
@@ -408,19 +464,8 @@ body {
     background-color: white;
 }
 
-.eod-para {
+.eod-para{
     font-size: 1.5rem;
-    font-family: cursive;
-    padding: 11px;
-}
-
-
-.container-vid .box-container .video video {
-    width: 100%;
-    height: 100%;
-}
-
-#covered {
-    text-decoration: none;
-    color: black;
+        font-family: cursive;
+        padding: 11px;
 }
