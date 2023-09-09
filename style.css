@@ -6,7 +6,7 @@
 }
 
 
-
+/* Spinner */
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -29,7 +29,7 @@
 }
 
 
-/*** Heading ***/
+/* Heading */
 h1,
 h2,
 .fw-bold {
@@ -49,7 +49,7 @@ h6,
 }
 
 
-/*** Button ***/
+/* Button */
 .btn {
     font-weight: 500;
     transition: .5s;
@@ -86,7 +86,7 @@ h6,
 }
 
 
-/*** Navbar ***/
+/* Navbar */
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f067";
@@ -207,7 +207,7 @@ h6,
 }
 
 
-/*** Hero Header ***/
+/* Hero Header */
 .hero-header {
     margin-bottom: 6rem;
     padding: 18rem 0;
@@ -235,7 +235,7 @@ h6,
 }
 
 
-/*** Section Title ***/
+/* Section Title */
 .section-title {
     position: relative;
     display: flex;
@@ -295,7 +295,7 @@ h6,
 }
 
 
-/*** Feature ***/
+/* Feature */
 .feature-item {
     transition: .5s;
 }
@@ -305,7 +305,7 @@ h6,
 }
 
 
-/*** About ***/
+/* About */
 .progress {
     height: 5px;
 }
@@ -316,7 +316,7 @@ h6,
 }
 
 
-/*** Fact ***/
+/* Fact */
 .fact {
     margin: 6rem 0;
     background:
@@ -335,7 +335,7 @@ h6,
 }
 
 
-/*** Service ***/
+/* Service */
 .service-item {
     position: relative;
     padding: 45px 30px;
@@ -401,7 +401,7 @@ h6,
 }
 
 
-/*** Project Portfolio ***/
+/* Project Portfolio */
 #portfolio-flters li {
     display: inline-block;
     font-weight: 500;
@@ -444,7 +444,7 @@ h6,
 }
 
 
-/*** Newsletter ***/
+/* Newsletter */
 .newsletter {
     margin: 6rem 0;
     background:
@@ -463,7 +463,7 @@ h6,
 }
 
 
-/*** Testimonial ***/
+/* Testimonial */
 .testimonial-carousel .testimonial-item {
     padding: 0 30px 30px 30px;
 }
@@ -496,7 +496,7 @@ h6,
 }
 
 
-/*** Team ***/
+/* Team */
 .team-item .btn {
     color: var(--primary);
     background: #FFFFFF;
@@ -508,7 +508,7 @@ h6,
 }
 
 
-/*** Footer ***/
+/* Footer */
 .footer {
     margin-top: 6rem;
     padding-top: 9rem;
@@ -605,4 +605,3 @@ font-size: 3rem;
     color: black;
     border-radius: 4px solid black;
 }
-
