@@ -13,6 +13,22 @@ body{
     
 }
 
+.b{
+    position: fixed;
+    top: 0;
+    right: 10px;
+    border: none;
+    padding: 8px 30px;
+    background-color: brown;
+    color: white;
+    font-size: 22px;
+    border-radius: 2px;
+    margin: 20px;  
+}
+.b:hover,
+.b:active{
+    background-color: rgb(124, 0, 0);
+}
 
 .container-signUp{
     opacity: 0;
