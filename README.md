@@ -7,3 +7,13 @@ Problem Statement : Usually students do not prefer learning online due to lack o
 
 
 Solution : Talking about our website, it primarily focusses on making online lectures feasible and accessible. Upto the comfort of users, they are provided with both Textual info in the form of pdfs and virtual content in the form of videos. It also consists of a progress tracker to track the details of your accomplishment in the particular field. To reduce dependency on too many websites, ours is an all in one consisting of lectures, a virtual teacher ie, ChatBot, & extensive curriculum with domains such as AI, DS and core subs of engineering. Tracking your goals allows you to see how far you've come and how close you are to reaching your goal. This can be a great motivator to continue moving forward.
+
+
+Our Vision : Our vision is to not only provide free and accessible education, but also empower learners with a diversity in their knowledge thus, confirming the fact that it is a universal right, & not a privilege. We want to foster a community of learners with passion to teach and enthralling enthusiasm to learn!
+
+
+This is not only a hackathon project, but a major goal in joining hands together to foster a good environment for learning at home itself!
+
+
+Thanks & Regards
+Bit Manipulators
